@@ -1,39 +1,38 @@
-# devops-qr-code
+# Azure QR Code Generator
 
-This is the sample application for the DevOps Capstone Project.
-It generates QR Codes for the provided URL, the front-end is in NextJS and the API is written in Nodejs using Express.
+This application allows users to generate QR codes for provided URLs. The front-end is built using Next.js, while the API is developed in Node.js with Express.
 
-## Application
+## Application Overview
 
-**Front-End** - A web application where users can submit URLs.
+**Front-End**: A web application where users can submit URLs to generate QR codes.
 
-**API**: API that receives URLs and generates QR codes. The API stores the QR codes in cloud storage(Azure blob storage).
+**API**: An API that receives URLs and generates QR codes. The generated QR codes are stored in cloud storage, specifically Azure Blob Storage.
 
-## Running locally
-The API code exists in the `server` directory. You can run the API server locally:
+## Running Locally
 
-### server
-I created the nodejs express backend for this application
-- Clone this repo
-- Make sure you are in the `server` directory
-- run npm install to install the required packages
+### Setting Up the API (Server)
 
-### Front-end
+To run the API server locally:
 
-The front-end code exits in the `frontend` directory. You can run the front-end server locally:
+1. Clone this repository.
+2. Navigate to the `server` directory.
+3. Run `npm install` to install the required packages.
+4. Create a `.env` file to store secret variables `AZURE_STORAGE_CONNECTION_STRING` and `CONTAINER_NAME`
 
-- Clone this repo
-- Make sure you are in the `front-end-nextjs` directory
-- Install the dependencies: `npm install`
-- Run the NextJS Server: `npm run dev`
-- Your Front-end Server should be running on `http://localhost:3000`
+### Setting Up the Front-End
 
+To run the front-end server locally:
 
-## Goal
+1. Clone this repository.
+2. Navigate to the `front-end-nextjs` directory.
+3. Install the dependencies with `npm install`.
+4. Start the Next.js server with `npm run dev`.
+5. The front-end server should be accessible at `http://localhost:3000`.
 
-The goal is to get hands-on with Cloud practices like Storage.
+## Project Goal
 
-Look at the capstone project for more detials.
+The main goal of this project is to gain hands-on experience with cloud practices, particularly cloud storage solutions like Azure Blob Storage.
+
 
 ## Author
 
@@ -41,4 +40,4 @@ Look at the capstone project for more detials.
 
 ## License
 
-[MIT](./LICENSE)
+This project is licensed under the [MIT License](./LICENSE).

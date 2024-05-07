@@ -22,8 +22,8 @@ app.use((req, res, next) => {
 });
 
 // Azure Blob Storage Configuration
-const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
-const accountKey = process.env.AZURE_STORAGE_ACCOUNT_KEY;
+// const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
+// const accountKey = process.env.AZURE_STORAGE_ACCOUNT_KEY;
 const containerName = process.env.CONTAINER_NAME;
 
 const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AZURE_STORAGE_CONNECTION_STRING);
