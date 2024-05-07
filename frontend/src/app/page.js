@@ -43,7 +43,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#121212',
+    background: '#13072c',
     color: 'white',
   },
   title: {
@@ -71,8 +71,8 @@ const styles = {
     marginTop: '20px',
     border: 'none',
     borderRadius: '5px',
-    backgroundColor: '#0070f3',
-    color: 'white',
+    backgroundColor: 'white',
+    color: '#13072c',
     cursor: 'pointer',
   },
   qrCode: {
